@@ -5,4 +5,20 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="fanndouble.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="fanndouble.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="FANNCSharp.Double">
+      <HintPath>..\..\..\..\..\Downloads\FANNCSharp.DoubleReleasex64\FANNCSharp.Double.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>
